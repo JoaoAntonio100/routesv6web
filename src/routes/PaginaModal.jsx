@@ -16,9 +16,14 @@ function MeuBotaoModal() {
       <Row>
         <Col sm={8}>Buscar</Col>
         <Col sm={4}>
-          <Button variant="primary" onClick={handleShow} style={{ float: 'right' }}>
-            +
-          </Button>
+        <Button
+            variant="primary"
+            onClick={handleShow}
+            style={{ float: 'right', marginTop: '10px' }}
+              >
+                   +
+        </Button>
+
         </Col>
       </Row>
 
@@ -30,7 +35,7 @@ function MeuBotaoModal() {
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>Opa, vc esta lendo um texto do modal!</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
