@@ -28,6 +28,11 @@ export default function Root() {
           <form method="post">
             <button type="submit">New</button>
           </form>
+          <form>
+         <button type="button" onClick={() => window.open("/modal", "_blank")}>
+          Modal
+         </button>
+         </form>
         </div>
         <nav>
           <ul>

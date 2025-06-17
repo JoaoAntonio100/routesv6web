@@ -8,6 +8,10 @@ import "./index.css";
 import Root from "./routes/root.jsx";
 import ErrorPage from "./error-page";
 import Contact from "./routes/contact.jsx";
+import PaginaModal  from './routes/PaginaModal.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 const router = createBrowserRouter([
@@ -19,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "contacts/:contactId",
         element: <Contact />,
+      },
+
+            {
+        path: "modal",             // <-- define a rota
+        element: <PaginaModal />,    // <-- renderiza essa página
       },
     ],
   },
